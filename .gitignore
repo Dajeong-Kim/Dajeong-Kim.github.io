@@ -9,6 +9,6 @@ _site
 *.sublime-project
 *.sublime-workspace
 codekit-config.json
-Gemfile.lock
+Gemfile
 node_modules
 npm-debug.log*
