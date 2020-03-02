@@ -16,12 +16,12 @@
 theme: jekyll-theme-so-simple
 # remote_theme: mmistakes/so-simple-theme
 skin: "/assets/css/skins/default.css"
-locale: ko-KR
-title: "그냥 한 번 해보는 블로그"
-description: #""
+locale: en-US
+title: "My Awesome Site"
+description: "It really is the best."
 baseurl: # the subpath of your site, e.g. "/blog"
-url: "https://cocodevs.github.io/"
-logo: "/assets/media/dadong.png"
+url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+logo: # path of site logo, e.g. "/images/logo.png"
 date_format: "%B %-d, %Y"
 read_time: # reading time estimates, e.g. true
 words_per_minute: # 200
