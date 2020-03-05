@@ -68,7 +68,7 @@ Service도 테스트를 만들어준다.
 그런데 restaurantService을 못받아오는 에러가 발생..<br>
 
 > @BeforeEach
->  
+
 [해결법](https://stackoverflow.com/questions/47383225/before-beforeclass-seems-not-working-objects-indicates-on-null)을 참고하여 @BeforeEach로 수정해주었다. 
 <hr>
 <br><br><br>
