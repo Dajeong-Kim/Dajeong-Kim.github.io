@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "스프링부트-day4"
+title: "ui/application/domain layer 분리하기"
 excerpt: 스프링부트를 이용한 eatgo 프로젝트-day4 (부제:레이어 분리)
 ---
 

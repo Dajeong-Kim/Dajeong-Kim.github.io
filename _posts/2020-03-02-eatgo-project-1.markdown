@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "스프링부트-day1"
+title: "스프링 부트 프로젝트 시작하기-hello world"
 excerpt: 스프링부트를 이용한 eatgo 프로젝트-day1 (부제:hello world)
 ---
 

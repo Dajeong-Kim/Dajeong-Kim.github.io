@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "스프링부트-day3"
+title: "REST API의 목록/상세 및 DI"
 excerpt: 스프링부트를 이용한 eatgo 프로젝트-day3 (부제:REST목록/상세, DI)
 ---
 
