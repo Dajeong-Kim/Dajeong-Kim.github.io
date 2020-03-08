@@ -218,10 +218,10 @@ blockquote {
   padding: 0.3rem 0 1rem 1.4rem;
   margin: 0 2rem 1rem 0;
   border-left: .5em solid #0ca678;
-  background-color:#dee2e6;
+  background-color:#f1f3f5;
 
   p {
-    color: $blockquote-color;
+    //color: $blockquote-color;
   }
 
   p:last-child {
@@ -527,14 +527,12 @@ nav {
     float: left;
     width: 50%;
     a {
-      color: $pagination-color;
-      border: 1px solid $divider-color;
+      color: #fff;
       padding: 10px 20px;
-      background: $oc-gray-0;
+      background: $oc-teal-7;
 
       &:hover, &:focus {
         color: $pagination-over-color;
-        border: 1px solid $oc-teal-3;
       }
     }
   }
@@ -544,14 +542,12 @@ nav {
     text-align: right;
     width: 50%;
     a {
-      color: $pagination-color;
-      border: 1px solid $divider-color;
-      padding: 10px 20px;
-      background: $oc-gray-0;
+        color: #fff;
+        padding: 10px 20px;
+        background: $oc-teal-7;
 
       &:hover, &:focus {
         color: $pagination-over-color;
-        border: 1px solid $oc-teal-3;
       }
     }
   }

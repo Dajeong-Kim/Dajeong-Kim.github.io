@@ -12,7 +12,7 @@ navigation:
   #  url: /archive
   #- name:
   #  url: /tags
-paginate: 5
+paginate: 10
 
 footer-links:
   email: cocodev@naver.cmo

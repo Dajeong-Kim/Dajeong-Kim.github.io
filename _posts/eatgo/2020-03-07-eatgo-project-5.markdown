@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mockito, HTTPie 사용하기, REST API 추가"
-excerpt: 스프링부트를 이용한 eatgo 프로젝트-day5 (부제:가짜객체/REST 추가)
+excerpt: 스프링부트를 이용한 eatgo 프로젝트-day5 (가짜객체/REST 추가)
 ---
 
 <h2>가짜객체</h2>
@@ -14,7 +14,7 @@ excerpt: 스프링부트를 이용한 eatgo 프로젝트-day5 (부제:가짜객�
 
 해당 어노테이션을 사용하면 해당 객체를 Mock 객체로 사용가능하다.
 
-![mockito](../images/20200307/mockito.png)
+![mockito](../../images/20200307/mockito.png){: width="300"} 
 
 <s>로고가 귀여워서 가져와봤다</s>
 
@@ -107,13 +107,13 @@ RestaurantControllerTest에서 테스트는 기존 목록/상세와 약간 달�
 
 그럼 HTTPie를 이용해 가게를 추가해보자
 
-![post 요청](../images/20200307/image1.png)
+![post 요청](../../images/20200307/image1.png)
 
 삼겹살집이 잘 들어가는 것을 확인하였다.
 
-![목록](../images/20200307/image2.png)
+![목록](../../images/20200307/image2.png)
 
-목롤도 잘 나온다.
+목록도 잘 나온다.
 
 
 <h2>...</h2>

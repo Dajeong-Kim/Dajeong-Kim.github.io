@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "TDD기반의 프로젝트 만들어보자"
-excerpt: 스프링부트를 이용한 eatgo 프로젝트-day2 (부제:TDD)
+excerpt: 스프링부트를 이용한 eatgo 프로젝트-day2 (TDD)
 ---
 
 <h3>TDD</h3>
