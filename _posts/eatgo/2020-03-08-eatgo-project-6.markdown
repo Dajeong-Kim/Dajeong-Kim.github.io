@@ -93,9 +93,9 @@ npm 명령어로 webpack을 install 해준다.
 
 그런뒤 npm init을 해서 package.json을 생성해 준다.
 
-![npm init](../../images/20200308/image1.png)
+![npm init](../../images/20200308/image1.PNG)
 
-![npm init](../../images/20200308/image2.png)
+![npm init](../../images/20200308/image2.PNG)
 
 eatgo-web란 이름의 패키지를 생성했다.
 
@@ -154,7 +154,7 @@ public class RestaurantController {
 }
 ```
 
-![eatgo-web test](../../images/20200308/image3.png)
+![eatgo-web test](../../images/20200308/image3.PNG)
 
 이제 데이터를 받아 올 수 있다.
 <br>
