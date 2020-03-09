@@ -45,7 +45,7 @@ memory를 file로 저장가능하다.
 
 <h2>H2 사용</h2>
 
-```
+```yaml
 implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 implementation 'com.h2database:h2'
 ```
@@ -56,13 +56,13 @@ implementation 'com.h2database:h2'
 
 
 <h2>JPA 사용</h2>
-```
+```java
 public interface RestaurantRepository extends CrudRepository<Restaurant, Long>
 ...
 ```
 repository에서 CrudRepository를 상속받도록 수정해주었다.
 
-```
+```java
 @Entity
 public class Restaurant {
 
@@ -102,7 +102,7 @@ eatgo-web란 이름의 패키지를 생성했다.
 entry point로 설정하면 해당 js를 main.js로 호출이 가능하다.
 
 
-```
+```yaml
 "scripts": {
     "start": "webpack-dev-server --port 3000"
     ..
@@ -115,7 +115,7 @@ webpack-dev-server는 빠른 실시간 리로드를 할 수 있다고 한다.
 
 웹서버의 포트는 3000으로 정해주었다.
 
-```
+```html
 (async () => {
     const url = 'http://localhost:8080/restaurants';
     const response = await fetch(url);
@@ -146,7 +146,7 @@ index.js 이다.
 > @CrossOrigin
 
 서버단에서 @CrossOrigin 어노테이션을 사용하여 허용해준다.
-```
+```java
 @CrossOrigin
 @RestController
 public class RestaurantController {
@@ -182,7 +182,7 @@ PUT과 PATCH의 차이를 찾아보니
 
 데이터를 수정하면 db 수정하도록 어노테이션을 붙여주었다. 
 
-```
+```java
     @Transactional
     public Restaurant updateRestaurant(long id, String name, String address) {
         Restaurant restaurant = restaurantRepository.findById(id).orElse(null);

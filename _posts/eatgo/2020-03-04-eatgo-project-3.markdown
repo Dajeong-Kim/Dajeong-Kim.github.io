@@ -13,7 +13,7 @@ excerpt: 스프링부트를 이용한 eatgo 프로젝트-day3 (REST목록/상세
 - DELETE - DELETE
 
 <h3>레스토랑 목록</h3>
-```
+```java
     @GetMapping("/restaurants")
     public List<Restaurant> list(){
         List<Restaurant> restaurants = restaurantRepository.findAll();
@@ -22,7 +22,7 @@ excerpt: 스프링부트를 이용한 eatgo 프로젝트-day3 (REST목록/상세
 ```
 레스토랑의 목록은 GET /restaurants으로 요청한다.<br>
 간단한 CRUD는 흔히 접하는 형식이고 테스트 위주로 작성해보면<br>
-```
+```java
     @Autowired
     private MockMvc mvc;
 
@@ -64,7 +64,7 @@ status가 200이며
 response body에 내용이 있는지 확인
 
 <h3>레스토랑 상세</h3>
-```
+```java
     @GetMapping("restaurants/{id}")
     public Restaurant detail(@PathVariable("id") Long id){
         Restaurant restaurant = restaurantRepository.findById(id);
@@ -73,7 +73,7 @@ response body에 내용이 있는지 확인
 ```
 id에 따라 해당 요청을 하기 위해 @PathVariable를 사용
 
-```
+```java
     @Test
     public void detail() throws Exception {
         mvc.perform(get("/restaurants/1004"))
@@ -99,7 +99,7 @@ id에 따라 해당 요청을 하기 위해 @PathVariable를 사용
 > 상세도 목록과 동일한 방법으로 테스트
 
 
-```
+```java
 //RestaurantRepository.java 
 public interface RestaurantRepository {
     List<Restaurant> findAll();

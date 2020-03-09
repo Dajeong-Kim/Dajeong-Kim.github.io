@@ -15,7 +15,7 @@ excerpt: 스프링부트를 이용한 eatgo 프로젝트-day4 (레이어 분리)
  
 > application layer인 Service를 추가해 보자
 
-```
+```java
 @Service
 public class RestaurantService {
     @Autowired
@@ -29,7 +29,7 @@ public class RestaurantService {
 Service어노테이션을 붙여준다.
 비즈니스 로직이나 repository layer를 호출하는 곳에서 사용
 
-```
+```java
 public class RestaurantServiceTest {
 
     private RestaurantService restaurantService;

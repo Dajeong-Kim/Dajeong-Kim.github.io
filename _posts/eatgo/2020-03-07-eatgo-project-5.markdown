@@ -18,7 +18,7 @@ excerpt: 스프링부트를 이용한 eatgo 프로젝트-day5 (가짜객체/REST
 
 <s>로고가 귀여워서 가져와봤다</s>
 
-```
+```java
 @MockBean
 private RestaurantService restaurantService;
 ```
@@ -61,7 +61,7 @@ HTTPie를 사용해보니 직관적이고 사용하기 편하다.
 <br><br>
 <h2>REST 추가</h2>
 
-```
+```java
     @PostMapping("/restaurants")
     public ResponseEntity<?> create(@RequestBody Restaurant resource) throws URISyntaxException {
         String name = resource.getName();
@@ -79,7 +79,7 @@ RestaurantController에 create()를 추가해주었다.<br>
 아직은 제대로된 코드는 아니고 추가하는 로직을 만들어주었다.
 
 
-```
+```java
     @Test
     public void create() throws Exception{
         //Restaurant restaurant = new Restaurant("SamGyeopSal", "Seoul");

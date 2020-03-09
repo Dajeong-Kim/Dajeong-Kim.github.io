@@ -46,7 +46,7 @@ excerpt: 스프링부트를 이용한 eatgo 프로젝트-day1 (hello world)
 
 > 에러가 발생한다
 
-```
+```java
 @RestController
 public class WelcomeController {
     @GetMapping("/")

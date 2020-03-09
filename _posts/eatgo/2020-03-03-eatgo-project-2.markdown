@@ -16,7 +16,7 @@ TDD란 위의 Red, Green, Refactoring 이 순환하는 구조이다.
 
 Java에서는 junit을 사용하여 TDD를 한다.
 
-```
+```java
 public class Restaurant {
     public String getName(){
         return "Bob Zip";
@@ -28,7 +28,7 @@ public class Restaurant {
 
 > 해당 클래스에서 오른쪽 버튼을 누르고 Go To > Test > Create New Test
  
-```
+```java
     @Test
     public void creation(){
         Restaurant restaurant = new Restaurant();
