@@ -7,7 +7,7 @@ date: 2020-03-10T01:00:00Z
  
 # validation
 
-Spring에서 `@Valid` 어노테이션을 사용하여 쉽게 유효성을 검사할 수 있다.
+Spring에서 `@Valid` 어노테이션을 사용하면 쉽게 유효성을 검사할 수 있다.
 
 RestaurantController의 create 부분을 보자.
 
