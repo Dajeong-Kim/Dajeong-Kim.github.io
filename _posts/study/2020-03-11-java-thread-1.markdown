@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Java에서 Thread 사용하기 - 1"
-excerpt: "Java에서 Thread 사용하기 - 1(정의/사용법/Status)"
+excerpt: "Java에서 Thread 사용하기 - 1(정의/사용법/Status/interrupt)"
 ---
 
 Thread에 대해 알아보자. 학교다닐 때 배웠지만 사용하지 않아서 기억이 가물가물하다.  
@@ -70,3 +70,34 @@ Thread가 종료되면 `Dead`상태가 된다.
 2. wait() - notify() 또는 notifyAll()
 3. join() - 다른 스레드가 종료되면
 
+
+## interrupt
+- 다른 thread에 예외를 발생시키는 interrupt를 보냄
+- thread가 sleep(), wait(), join() 메서드에 의해 블럭킹되었다면 interrupt에 의해 다시  runnable상태가 될 수 있음
+
+```java
+public class InterruptTest extends Thread {
+    public void run(){
+        try {
+            while(true){
+                System.out.println("호출");
+                sleep(1000);    
+            }
+        } catch (InterruptedException e) {
+            System.out.println(e);           
+        }
+    }
+    public static void main(String[] args){
+        InterruptTest test = new InterruptTest();
+        test.start();
+        try {
+            while(true){
+                test.sleep(5000);    
+            }
+        } catch (InterruptedException e) {}
+        test.interrupt();
+    }
+}
+```
+sleep중일 때 interrupt() 메서드를 수행하면 InterruptedException가 발생하고 run()의 catch에서 잡아준다.  
+그렇게되면 run()을 빠져나오게되고 스레드는 종료된다.
